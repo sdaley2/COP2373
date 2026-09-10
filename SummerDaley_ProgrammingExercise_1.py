@@ -10,7 +10,7 @@ def get_ticket_count(remaining_tickets):
         maximum_tickets = min(MAX_TICKETS_PER_BUYER, remaining_tickets)
 
         tickets = int(input(
-            f"How many tickets would you like to buy (1-{maximum_tickets})? "
+            f"How many tickets would you like to purchase (1-{maximum_tickets})? "
         ))
         # Accept the purchase only when it falls within the allowed range.
         if 1 <= tickets <= maximum_tickets:
