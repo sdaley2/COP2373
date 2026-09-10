@@ -30,7 +30,7 @@ def main():
 
     # Start the sale with the full number of available tickets.
     remaining_tickets = TOTAL_TICKETS
-    total_buyers = 0
+    buyer_count = 0
 
     # Continue selling tickets until the entire inventory is sold.
     while remaining_tickets > 0:
@@ -40,12 +40,12 @@ def main():
         remaining_tickets -= tickets
 
         # Count each completed purchase as one buyer.
-        total_buyers += 1
+        buyer_count += 1
         display_remaining(remaining_tickets)
 
     # Display the final results after all the tickets have been sold.
     print("All tickets have been sold.")
-    print(f"Total number of buyers: {total_buyers}")
+    print(f"Total number of buyers: {buyer_count}")
 
 if __name__ == "__main__":
     main()
